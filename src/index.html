@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <title>Interactions</title>
+  </head>
+  <body class="page__body">
+    <div class="users">
+      <h1 class="users__title">List of users</h1>
+
+      <div class="users__buttons">
+        <button type="button" class="users__buttons-button-all button">
+          Show all users
+        </button>
+        <select name="select-users" class="users__buttons-select button">
+          <option value="" disabled selected>Select user</option>
+        </select>
+        <div class="users__add">
+          <form class="users__add-form" name="addUser">
+            <label for="name">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                class="users__add-input"
+              />
+            </label>
+            <label for="email">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="users__add-input"
+              />
+            </label>
+            <label for="phone">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+                class="users__add-input"
+              />
+            </label>
+            <button type="button" class="users__buttons-button-add-user button">
+              Add user
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="users__container">
+        <table class="users__container-list">
+          <tr class="users__container-tableheads">
+            <th class="cell">Name</th>
+            <th class="cell">Email</th>
+            <th class="cell">Phone Number</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

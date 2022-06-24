@@ -1,0 +1,35 @@
+.users {
+  display: flex;
+  flex-direction: column;
+}
+
+.users__buttons {
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 250px;
+}
+
+.users__add {
+  margin-top: 10px;
+}
+
+.users__container {
+  display: flex;
+}
+
+.users__container-list {
+  width: 1000px;
+  border-collapse: collapse;
+}
+
+.users__container-list,
+.cell {
+  border: 1px solid;
+}
+
+.cell {
+  width: 250px;
+  overflow-wrap: break-word;
+}
